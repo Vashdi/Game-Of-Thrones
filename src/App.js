@@ -1,4 +1,4 @@
-import { GOT_API } from "./utils/consts";
+import { GOT_API, INITIAL_LENGTH } from "./utils/consts";
 import Error from "./Components/Error/Error";
 import Footer from "./Components/Footer/Footer";
 import Loader from "./Components/Loader/Loader";
@@ -7,8 +7,8 @@ import useFetch from "./Components/Hooks/useFetch";
 import Gallery from "./Components/Gallery/Gallery";
 import { useCallback, useMemo, useState } from "react";
 
-const App = ({ initialLength }) => {
-  const [pageSize] = useState(initialLength);
+const App = () => {
+  const [pageSize] = useState(INITIAL_LENGTH);
   const [currentPage, setCurrentPage] = useState(1);
   const { data, isLoading, isError } = useFetch(GOT_API);
 
