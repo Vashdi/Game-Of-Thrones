@@ -102,10 +102,10 @@ describe("testing more button", () => {
     render(<App />);
     await waitForElementToBeRemoved(() => screen.queryByText(/Loading/i));
     const moreBtnActive = await screen.findByTestId("footer");
-    expect(moreBtnActive).toHaveClass("more-button-active");
+    expect(moreBtnActive).toHaveStyle("cursor:pointer;");
     const user = userEvent.setup();
     await user.click(moreBtnActive);
     const moreBtnDisable = await screen.findByTestId("footer");
-    expect(moreBtnDisable).toHaveClass("more-button-disable");
+    expect(moreBtnDisable).toHaveStyle("cursor:no-drop;");
   });
 });
