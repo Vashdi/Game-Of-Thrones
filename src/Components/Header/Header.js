@@ -1,8 +1,8 @@
-import "./Header.css";
 import { GOT_TITLE } from "../../utils/consts";
+import { HeaderContainer } from "../Styles/styles";
 
 const Header = () => {
-  return <div className="header-container">{GOT_TITLE}</div>;
+  return <HeaderContainer>{GOT_TITLE}</HeaderContainer>;
 };
 
 export default Header;

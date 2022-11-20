@@ -1,8 +1,8 @@
-import "./Loader.css";
 import { LOADING } from "../../utils/consts";
+import { LoaderContainer } from "../Styles/styles";
 
 const Loader = () => {
-  return <div className="loader-container">{LOADING}</div>;
+  return <LoaderContainer>{LOADING}</LoaderContainer>;
 };
 
 export default Loader;

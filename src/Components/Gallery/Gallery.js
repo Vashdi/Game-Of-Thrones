@@ -1,13 +1,13 @@
-import "./Gallery.css";
+import { GalleryContainer } from "../Styles/styles";
 import CharacterCard from "../CharacterCard/CharacterCard";
 
 const Gallery = ({ characters }) => {
   return (
-    <div data-testid="gallery" className="gallery-container">
+    <GalleryContainer data-testid="gallery">
       {characters.map((character) => (
         <CharacterCard key={character.id} character={character} />
       ))}
-    </div>
+    </GalleryContainer>
   );
 };
 

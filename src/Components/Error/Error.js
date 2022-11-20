@@ -1,8 +1,8 @@
-import "./Error.css";
 import { ERROR } from "../../utils/consts";
+import { ErrorContainer } from "../Styles/styles";
 
 const Error = () => {
-  return <div className="error-container">{ERROR}</div>;
+  return <ErrorContainer>{ERROR}</ErrorContainer>;
 };
 
 export default Error;

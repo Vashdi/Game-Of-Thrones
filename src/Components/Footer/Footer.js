@@ -1,18 +1,16 @@
-import "./Footer.css";
+import { FooterContainer, MoreButton } from "../Styles/styles";
 
 const Footer = ({ disabled, handleOnClickShowMore }) => {
   return (
-    <div>
-      <div className="footer-container">
-        <div
-          data-testid="footer"
-          className={disabled ? "more-button-disable" : "more-button-active"}
-          onClick={handleOnClickShowMore}
-        >
-          More
-        </div>
-      </div>
-    </div>
+    <FooterContainer>
+      <MoreButton
+        disable={disabled}
+        data-testid="footer"
+        onClick={handleOnClickShowMore}
+      >
+        More
+      </MoreButton>
+    </FooterContainer>
   );
 };
 
