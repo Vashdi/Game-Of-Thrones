@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { FooterContainer, MoreButton } from "../Styles/styles";
 
 const Footer = ({ disabled, handleOnClickShowMore }) => {
@@ -14,4 +15,4 @@ const Footer = ({ disabled, handleOnClickShowMore }) => {
   );
 };
 
-export default Footer;
+export default memo(Footer);
